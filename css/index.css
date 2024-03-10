@@ -83,20 +83,11 @@ h2 span::after {
 }
 
 @keyframes scale {
-  0% {
-     transform: scale(0.9);
-     opacity: 0;
-  }
+  0% { transform: scale(0.9); }
 
-  50% {
-     transform: scale(1.01);
-     opacity: 0.5;
-  }
+  50% { transform: scale(1.01); }
 
-  100% {
-     transform: scale(1);
-     opacity: 1;
-  }
+  100% { transform: scale(1); }
 }
 
 .tabs #tab1:checked~#content1,
