@@ -209,6 +209,7 @@ h2 span::after {
   border-radius: 6px;
   text-align: center;
   transition: .3s linear;
+  cursor: pointer;
 }
 
 .pricing-button:hover {
