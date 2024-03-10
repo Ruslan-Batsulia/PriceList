@@ -9,12 +9,39 @@
   <title>TestHtmlCssJs</title>
 </head>
 <body>
-  <h1>Таблиця цін з перемикачем</h1>
-  <h2>
-    <span>Наші</span> тарифні плани
-  </h2>
+  <header>
+    <div class="container">
+      <nav>
+        <ul class="topmenu">
+          <li><a class="active">Головна<span>&#9660;</span></a>
+            <ul class="submenu">
+              <li><a>Купити потім</a></li>
+              <li><a>Купити зараз<span>&#9660;</span></a>
+                <ul class="submenu">
+                  <li><a>Все ще купити потім</a></li>
+                  <li><a>Скоріш за все купити зараз</a></li>
+                  <li><a>Точно купити зараз</a></li>
+                </ul>
+              </li>
+              <li><a>Купити зараз але потім</a></li>
+            </ul>
+          </li>
+          <li><a>Компанія</a></li>
+          <li><a>Про нас</a></li>
+          <li><a>Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <div class="tabs">
+  <div class="container">
+    <h1>Таблиця цін з перемикачем</h1>
+    <h2>
+      <span>Наші</span> тарифні плани
+    </h2>
+  </div>
+
+  <div class="container tabs">
     <input type="radio" name="tabs" id="tab1" checked />
     <label for="tab1">Оплата місяць</label>
     <input type="radio" name="tabs" id="tab2" />
