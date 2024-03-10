@@ -216,16 +216,27 @@ h2 span::after {
   visibility: hidden;
 }
 
+.pricing-tables .pricing-item:nth-child(2) .item-inner .pricing-button::before {
+  background: white;
+  color: black;
+}
+
+.pricing-tables .pricing-item:nth-child(2) .item-inner .pricing-button::after {
+  border-top-color: white;
+}
+
 .pricing-button::before {
   content: attr(data-tooltip);
-  width: fit-content;
+  width: 150px;
+  text-align: center;
   height: 40px;
   padding: 0 15px;
   line-height: 40px;
-  background: #3C4896;
+  background: #251349;
   border-radius: 5px;
   bottom: 90px;
-  left: calc(50% - 70px);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .pricing-button::after {
@@ -233,7 +244,7 @@ h2 span::after {
   width: 0;
   height: 0;
   border: 10px solid transparent;
-  border-top-color: #3C4896;
+  border-top-color: #251349;
   bottom: 70px;
   left: calc(50% - 10px);
 }
