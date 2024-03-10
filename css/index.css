@@ -81,23 +81,15 @@ nav li:hover > .submenu {
   opacity: 1;
 }
 
-h1, h2 {
-  font-weight: 500;
-  text-align: center;
-}
-
 h1 {
-  margin: 80px 0;
-}
-
-h2 {
-  display: table;
-  margin: 40px auto;
+  margin: 80px auto;
+  font-weight: 500;
   font-size: 36px;
   position: relative;
+  display: table;
 }
 
-h2::after {
+h1::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -109,11 +101,11 @@ h2::after {
   border-radius: 50%;
 }
 
-h2 span {
+h1 span {
   position: relative;
 }
 
-h2 span::after {
+h1 span::after {
   content: "";
   position: absolute;
   z-index: -1;
