@@ -190,7 +190,14 @@ h2 span::after {
   margin-right: 5px;
 }
 
+.pricing-button,
+.pricing-button::after,
+.pricing-button::before {
+  transition: .4s ease-in-out;
+}
+
 .pricing-button {
+  position: relative;
   background: #FF7556;
   display: block;
   font-size: 14px;
@@ -199,8 +206,50 @@ h2 span::after {
   line-height: 46px;
   border-radius: 6px;
   text-align: center;
-  transition: .3s linear;
   cursor: pointer;
+}
+
+.pricing-button::after,
+.pricing-button::before {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pricing-button::before {
+  content: attr(data-tooltip);
+  width: fit-content;
+  height: 40px;
+  padding: 0 15px;
+  line-height: 40px;
+  background: #3C4896;
+  border-radius: 5px;
+  bottom: 90px;
+  left: calc(50% - 70px);
+}
+
+.pricing-button::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #3C4896;
+  bottom: 70px;
+  left: calc(50% - 10px);
+}
+
+.pricing-button:hover::after,
+.pricing-button:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pricing-button:hover::after {
+  bottom: 50px;
+}
+
+.pricing-button:hover::before {
+  bottom: 70px;
 }
 
 .pricing-button:hover {
